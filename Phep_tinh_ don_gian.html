@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phep tinh don gian</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<table>
+    <tr>
+        <td ><input id="soThuNhat" type="number"></td>
+        <td><input id="soThuHai" type="number"></td>
+        <td><button type="submit" onclick="cong()">Cộng</button></td>
+        <td><button type="submit" onclick="tru()">Trừ</button></td>
+
+    </tr>
+</table>
+    <p id="ketQua">Ket qua</p>
+    <script>
+        function cong(){
+            let sothunhat= +document.getElementById('soThuNhat').value;
+            let sothuhai= +document.getElementById('soThuHai').value;
+            let tong= sothunhat + sothuhai ;
+            document.getElementById('ketQua').innerHTML= 'Ket qua la : '+ tong;
+
+        }
+        function tru(){
+            let sothunhat= +document.getElementById('soThuNhat').value;
+            let sothuhai= +document.getElementById('soThuHai').value;
+            let hieu= sothunhat - sothuhai ;
+            document.getElementById('ketQua').innerHTML= 'Ket qua la : '+hieu;
+
+        }
+    </script>
+
+</body>
+</html>
